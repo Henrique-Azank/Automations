@@ -33,7 +33,7 @@ $localDir = "C:/Henrique"
 $containerDir = "/mnt/henrique"
 
 # Define the container name
-$containerName = "my-ubuntu-container"
+$containerName = "my-linux-container"
 $dockerImage = "python:3"
 
 # Check if the container already exists
