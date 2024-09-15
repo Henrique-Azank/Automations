@@ -1,5 +1,5 @@
 
-# Simple Script for starting an Ubuntu container with Docker Desktop using PowerShell
+# Simple Script for starting an Debian Python container with Docker Desktop using PowerShell
 
 # Used to mount a local directory to the container as a volume when you need to work with files in the container
 # or for when you just want to use bash in your Windows machine
@@ -34,7 +34,7 @@ $containerDir = "/mnt/henrique"
 
 # Define the container name
 $containerName = "my-ubuntu-container"
-$dockerImage = "ubuntu:latest"
+$dockerImage = "python:3"
 
 # Check if the container already exists
 $containerExists = docker ps -a --filter "name=$containerName" --format "{{.Names}}" | ForEach-Object { $_ -eq $containerName }
